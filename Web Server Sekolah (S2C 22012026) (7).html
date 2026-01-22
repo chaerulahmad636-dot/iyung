@@ -32,14 +32,14 @@
         /* ERROR 1: Kode CSS untuk kotak server (card) belum ditutup kurung kurawal '}' 
            dan background color-nya salah ketik */
         .server-card {
-            background-colr: #16213e; /* Typo di sini */
+            background-color: #16213e; /* Typo di sini */
             border: 1px solid #0f3460;
             border-radius: 10px;
             padding: 20px;
             width: 250px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0,0,0,0.5);
-        
+        }
         /* Kurung tutup } hilang di sini */
 
         .icon {
@@ -97,7 +97,7 @@
             <div class="icon">📡</div>
             <h3>Mikrotik Gateway</h3>
             <p>IP: 192.168.1.1</p>
-            <p>Uptime: 24 Jam</p>
+            <p>Uptime: 5 Jam</p>
             <div class="status-box online">STATUS: ONLINE</div>
         </div>
 
@@ -106,11 +106,20 @@
             <h3>Server CBT Ujian</h3>
             <p>IP: 192.168.10.200</p>
             
-            <div class="status-box online">STATUS: OFFLINE (RUSAK)</div>
+            <div class="status-box offline">STATUS: OFFLINE (RUSAK)</div>
+        </div>
+      
+        <div class="server-card">
+            <div class="icon">💻</div>
+            <h3>NAS FILE SERVER</h3>
+            <p>IP: 192.168.10.200</p>
+            
+            <div class="status-box maintenance">STATUS: MAINTENANCE</div>
         </div>
 
         </div> <div style="text-align: center; margin-top: 40px;">
         <button onclick="alert('Memperbarui Status Server...')">REFRESH STATUS
+</button>
     </div>
 
 </body>
